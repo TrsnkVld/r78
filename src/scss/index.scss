@@ -1,0 +1,171 @@
+@import "transitions";
+@import "svgicons";
+@import "typo";
+@import "ui";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	overflow: hidden;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: $black;
+	cursor: default;
+}
+
+.question {
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.popover {
+	border-radius: 4px;
+	border: none;
+	background: #4d4d4d;
+
+	.arrow {
+		display: none;
+	}
+
+	.popover {
+		&-body {
+			font-size: 12px;
+			line-height: 14px;
+			font-weight: bold;
+			color: white;
+			padding: 5px 10px;
+		}
+	}
+}
+
+.form-group {
+	margin: 0 0 20px 0;
+}
+
+.aside-section {
+	border-bottom: 1px solid #e6e6e6;
+	background: white;
+
+	.dropdown {
+		&-toggle {
+			padding: 11px 45px 11px 16px;
+
+			&::after {
+				// right: 6px;
+				transition: 0.3s ease;
+			}
+		}
+
+		&-menu {
+			width: 100%;
+			min-width: auto;
+			transform: translate3d(0px, 38px, 0px) !important;
+		}
+
+		&-item {
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center;
+		}
+
+		&.show {
+			.dropdown {
+				&-toggle {
+					&::after {
+						transform: translateY(-50%) rotate(180deg);
+					}
+				}
+			}
+		}
+	}
+
+	.btn-text {
+		color: $primary;
+
+		svg {
+			width: 8px;
+			margin-left: 5px;
+			transition: 0.3s ease;
+
+			path {
+				fill: $primary;
+			}
+		}
+	}
+
+	.custom-checkbox {
+		margin-bottom: 10px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&--options {
+		span {
+			color: #666666;
+		}
+	}
+}
+
+.router-link-exact-active,
+.cursor-disabled {
+	pointer-events: none;
+}
+
+.modal {
+	&-header {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		border: none;
+		z-index: 1;
+	}
+
+	&-body {
+		padding: 0 30px;
+	}
+}
+
+.routes-tags-wrap {
+	& > div {
+		position: relative;
+	}
+
+	h2 {
+		position: sticky;
+		top: 26px;
+		z-index: 8;
+	}
+}
+.tags {
+	&.overflow {
+		max-height: 139px;
+		overflow: hidden;
+	}
+
+	&-wrap {
+		margin: 0 -3px 16px;
+		transition: margin $transition;
+		display: flex;
+		flex-flow: wrap;
+
+		&::after {
+			content: "";
+			flex-grow: 1000000000;
+		}
+	}
+}

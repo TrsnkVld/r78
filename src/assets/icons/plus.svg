@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Области" transform="translate(-1397.000000, -486.000000)" fill="#4D4D4D">
+            <g id="zoom" transform="translate(1283.000000, 472.000000)">
+                <g id="Group" transform="translate(114.000000, 14.000000)">
+                    <path d="M6,0 C5.44771525,0 5,0.44771525 5,1 L5,5 L1,5 C0.44771525,5 0,5.44771525 0,6 C0,6.55228475 0.44771525,7 1,7 L5,7 L5,11 C5,11.5522847 5.44771525,12 6,12 C6.55228475,12 7,11.5522847 7,11 L7,7 L11,7 C11.5522847,7 12,6.55228475 12,6 C12,5.44771525 11.5522847,5 11,5 L7,5 L7,1 C7,0.44771525 6.55228475,0 6,0 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

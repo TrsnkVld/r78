@@ -1,0 +1,91 @@
+.route {
+	&-enter-active,
+	&-leave-active {
+		transition: opacity 0.2s !important;
+	}
+
+	&-enter,
+	&-leave-to {
+		opacity: 0;
+	}
+}
+
+.filter-fade {
+	&-enter-active,
+	&-leave-active {
+		transition: opacity, transform, 0.2s !important;
+	}
+
+	&-enter,
+	&-leave-to {
+		opacity: 0;
+		transform: scale(.9);
+	}
+}
+
+.filter {
+	&-enter-active,
+	&-leave-active {
+		transition: 13s ease;
+	}
+
+	&-enter,
+	&-leave-to {
+		width: 0px;
+		opacity: 0;
+	}
+}
+
+.map-elements {
+	&-enter-active,
+	&-leave-active {
+		transition: opacity 0.3s;
+	}
+
+	&-enter-active {
+		transition-delay: 0.3s;
+	}
+
+	&-enter,
+	&-leave-to {
+		opacity: 0;
+	}
+}
+
+$slide-distance: 30px;
+
+.slide-left,
+.slide-right,
+.slide-up,
+.slide-down {
+	&-enter-active,
+	&-leave-active {
+		transition: 0.3s ease;
+	}
+
+	&-enter,
+	&-leave-to {
+		transform: translateX($slide-distance);
+		opacity: 0;
+	}
+}
+
+.slide-right {
+	&-enter,
+	&-leave-to {
+		transform: translateX(-$slide-distance);
+	}
+}
+
+.slide-up {
+	&-enter,
+	&-leave-to {
+		transform: translateY($slide-distance);
+	}
+}
+.slide-down {
+	&-enter,
+	&-leave-to {
+		transform: translateY(-$slide-distance);
+	}
+}

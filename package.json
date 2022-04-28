@@ -1,0 +1,40 @@
+{
+  "name": "r78_map",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npm run svg && vue-cli-service serve",
+    "build": "npm run svg && vue-cli-service build",
+    "svg": "vsvg -s ./src/assets/icons -t ./src/icons"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.6.5",
+    "debounce": "^1.2.1",
+    "mapbox-gl": "^2.1.1",
+    "mapbox-gl-vue": "^2.0.4",
+    "smoothscroll-polyfill": "^0.4.4",
+    "vue": "^2.6.12",
+    "vue-axios": "^3.2.4",
+    "vue-click-outside": "^1.1.0",
+    "vue-html2pdf": "^1.8.0",
+    "vue-router": "^3.2.0",
+    "vue-slider-component": "^3.2.11",
+    "vue-svgicon": "^3.2.6",
+    "vue-the-mask": "^0.11.1",
+    "vue-yandex-maps": "^0.10.10",
+    "vuex": "^3.4.0",
+    "vuex-map-fields": "^1.4.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
